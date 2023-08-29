@@ -13,8 +13,9 @@ Purchase Decision (No = 0; Yes = 1)
 # About the project
 The project uses decision tree to predict. Two decision tree is created with gini and entropy criterion. 
 The prediction will help in understanding the trends and pattern in which people buy car.
-Graphviz is a package used for drawing decision tree graph. Gini.png and entropy.png contains the images 
+Graphviz is a package used for drawing decision tree graph. [Gini.png]( and entropy.png contains the images 
 which visualizes the decision tree using graphviz. 
+
 # Model in use
 Decision tree is a supervised learning which is widely used for classification and regression. The model tends to ask
 a series of if/else questions in a hierarchal order. A tree like-structure is created which consist of a root node , branches and leaf node.
@@ -33,5 +34,19 @@ There are two types of purning:
 2) Post-Purning
 
 **Entropy**
-Entropy measures the impurity in the given dataset. 
+Entropy is a fundamental concept used to measure the impurity or uncertainity in the given dataset. Information gain computes the 
+difference between entropy before split and average entropy after split of the dataset based on given attribute values.
+
+**Information Gain = Entropy(Parent_node) - Entropy(Child_node)**
+
+**Entropy, H(t) = -Σp(i|t) log[p(i|t)]**
+
+
+**Gini index**
+Gini index is a measurement of impurity used in decision tree algorithm.
+It helps to decide hwo to split the data into subsets during the training process.
+
+**Gini(D) = 1- Σ(pi)^2**
+
+
 
